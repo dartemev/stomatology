@@ -1,4 +1,4 @@
-.home__invite .invite .invite__offer .invite__btn {
+.home__invite .invite .invite__offer .invite__btn, .page__footer .page__container .invite .invite__offer .invite__btn, .credit .invite__btn_credit {
     display: block;
     background: linear-gradient(277.35deg, #116E96 9.82%, #20DFBD 58.73%);
     text-align: center;
@@ -1635,4 +1635,463 @@ a, a:hover, a:visited, a:active {
         -ms-flex-direction: column;
         flex-direction: column;
     }
+
+    .services__list {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+.our-technology {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.our-technology .our-technology__content {
+    width: 100%;
+    max-width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.our-technology .our-technology__content .our-technology__title {
+    margin-bottom: 40px;
+}
+
+.our-technology .our-technology__content .our-technology__title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #065770;
+}
+
+.our-technology .our-technology__content .our-technology__menu .our-technology__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item {
+    width: 280px;
+    height: 190px;
+    padding-top: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item span {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #1C7C8F;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item span .our-technology__link {
+    color: #fff;
+}
+
+.our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item span .our-technology__link:hover {
+    text-shadow: 0 0 2px #fff;
+}
+
+.our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item_narcoz {
+    background: url(../images/tech-narcoz.png) no-repeat center top/100%;
+}
+
+.our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item_microscop {
+    background: url(../images/tech-microscop.png) no-repeat center top/100%;
+}
+
+.our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item_slide {
+    background: url(../images/tech-slide.png) no-repeat center top/100%;
+}
+
+.our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item_bone {
+    background: url(../images/tech-bone.png) no-repeat center top/100%;
+}
+
+.our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item_implant {
+    background: url(../images/tech-implant.png) no-repeat center top/100%;
+}
+
+.services {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.services .services__content {
+    width: 100%;
+    max-width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.services .services__content .services__title h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #065770;
+    text-transform: uppercase;
+}
+
+.services .services__content .services__menu .services__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.services .services__content .services__menu .services__list .services__item {
+    -ms-flex: 0 0 33.333%;
+    flex: 0 0 33.333%;
+    margin-bottom: 30px;
+}
+
+.services .services__content .services__menu .services__list .services__item span {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.services .services__content .services__menu .services__list .services__item span .services__item_link {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.services .services__content .services__menu .services__list .services__item .dent {
+    background: url(../images/services-01.png) no-repeat center/100%;
+}
+
+.services .services__content .services__menu .services__list .services__item .implant {
+    background: url(../images/services-02.png) no-repeat center/100%;
+}
+
+.services .services__content .services__menu .services__list .services__item .implant-key {
+    background: url(../images/services-03.png) no-repeat center/100%;
+}
+
+.services .services__content .services__menu .services__list .services__item .implant-cost {
+    background: url(../images/services-04.png) no-repeat center/100%;
+}
+
+.services .services__content .services__menu .services__list .services__item .implant-bone {
+    background: url(../images/services-05.png) no-repeat center/100%;
+}
+
+.services .services__content .services__menu .services__list .services__item .implant-one {
+    background: url(../images/services-06.png) no-repeat center/100%;
+}
+
+.services .services__content .services__menu .services__list .services__item .hygiene {
+    background: url(../images/services-07.png) no-repeat center/100%;
+}
+
+.services .services__content .services__menu .services__list .services__item .paradont {
+    background: url(../images/services-08.png) no-repeat center/100%;
+}
+
+.services .services__content .services__menu .services__list .services__item .ortodont {
+    background: url(../images/services-09.png) no-repeat center/100%;
+}
+
+.microscope {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.page__head {
+    padding-top: 40px;
+}
+
+.page__head_microscope {
+    background: url(../images/bg__microscope.png) no-repeat center top/cover;
+}
+
+.page__container {
+    width: 100%;
+    padding: 0 30px 0 80px;
+}
+
+.page__container .page__title {
+    width: 300px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.page__container .page__title_microscope {
+    margin-top: 330px;
+    padding-bottom: 50px;
+}
+
+.page__container .page__content {
+    padding-top: 60px;
+}
+
+.page__container .page__content .content__title {
+    margin-bottom: 15px;
+}
+
+.page__container .page__content .content__title h2 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #065770;
+}
+
+.page__container .page__content .content__diff {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #292929;
+    margin-bottom: 25px;
+}
+
+.page__container .page__content .content__diff img {
+    display: block;
+    width: 100%;
+}
+
+.page__breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.page__breadcrumb li {
+    margin-right: 10px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.page__breadcrumb li a {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.page__footer .page__container .invite {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.page__footer .page__container .invite .invite__img {
+    margin-right: 50px;
+}
+
+.page__footer .page__container .invite .invite__img img {
+    margin-left: -140px;
+}
+
+.page__footer .page__container .invite .invite__offer {
+    max-width: 560px;
+}
+
+.page__footer .page__container .invite .invite__offer .invite__title {
+    max-width: 450px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 3.5rem;
+    color: #065770;
+    margin-bottom: 17px;
+}
+
+.page__footer .page__container .invite .invite__offer .invite__title span {
+    font-weight: 700;
+}
+
+.page__footer .page__container .invite .invite__offer .invite__list li {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 18px;
+    background: url("../images/main-img_chek.png") no-repeat left center;
+}
+
+.page__footer .page__container .invite .invite__offer .invite__btn {
+    width: 250px;
+    height: 51px;
+    border-radius: 25px;
+    padding-top: 18px;
+    margin-top: 51px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page__head_implant {
+    background: url(../images/bg__implant.png) no-repeat center top/cover;
+}
+
+.page__title_implant {
+    padding-top: 40px;
+    padding-bottom: 420px;
+}
+
+.credit .page__container .page__content .content__title h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #065770;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.credit .page__container .page__content .content__title h2 {
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.credit .invite__btn_credit {
+    width: 300px;
+    height: 51px;
+    border-radius: 25px;
+    padding-top: 18px;
+    margin-top: 51px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+
+.contacts .page__container .page__content .content__title h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #065770;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contacts .page__container .page__content .content__title h2 {
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #292929;
+}
+
+.about .page__container .page__content .content__diff .content__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding-bottom: 30px;
+}
+
+.about .page__container .page__content .content__diff .content__wrapper .content__img {
+    max-width: 470px;
+    width: 100%;
+}
+
+.about .page__container .page__content .content__diff .content__wrapper .content__inf {
+    max-width: 470px;
+    width: 100%;
+}
+
+.inf__title {
+    margin-bottom: 20px;
+}
+
+.inf__title h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #065770;
+}
+
+.inf__title h2 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #292929;
 }

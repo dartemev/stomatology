@@ -1,4 +1,4 @@
-.home__invite .invite .invite__offer .invite__btn, .page__footer .page__container .invite .invite__offer .invite__btn, .credit .invite__btn_credit {
+.home__invite .invite .invite__offer .invite__btn, .page__footer .page__container .invite .invite__offer .invite__btn, .credit .invite__btn_credit, .price__footer .price__container .price-invite .price-invite__offer .price-invite__btn {
     display: block;
     background: linear-gradient(277.35deg, #116E96 9.82%, #20DFBD 58.73%);
     text-align: center;
@@ -1059,6 +1059,87 @@ button.swiper-pagination-bullet {
     backface-visibility: hidden;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-ExtraLight.eot");
+  src: url("../fonts/Montserrat-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff"), url("../fonts/Montserrat-ExtraLight.ttf") format("truetype"), url("../fonts/Montserrat-ExtraLight.svg#Montserrat-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Thin.eot");
+  src: url("../fonts/Montserrat-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff"), url("../fonts/Montserrat-Thin.ttf") format("truetype"), url("../fonts/Montserrat-Thin.svg#Montserrat-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("../fonts/Montserrat-ExtraBold.svg#Montserrat-ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Light.eot");
+  src: url("../fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Black.eot");
+  src: url("../fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.ttf") format("truetype"), url("../fonts/Montserrat-Black.svg#Montserrat-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -1191,6 +1272,12 @@ a, a:hover, a:visited, a:active {
     font-weight: 700;
     padding-top: 20px;
     box-shadow: 0px 2px 4px rgba(19, 83, 96, 0.41);
+}
+
+@media screen and (max-width: 960px) {
+    .sidebar {
+        display: none;
+    }
 }
 
 .main {
@@ -1757,6 +1844,7 @@ a, a:hover, a:visited, a:active {
     text-align: left;
     color: #065770;
     text-transform: uppercase;
+    padding-bottom: 50px;
 }
 
 .services .services__content .services__menu .services__list {
@@ -1769,8 +1857,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .services .services__content .services__menu .services__list .services__item {
-    -ms-flex: 0 0 33.333%;
-    flex: 0 0 33.333%;
+    width: 33.333%;
     margin-bottom: 30px;
 }
 
@@ -1832,6 +1919,36 @@ a, a:hover, a:visited, a:active {
 
 .services .services__content .services__menu .services__list .services__item .ortodont {
     background: url(../images/services-09.png) no-repeat center/100%;
+}
+
+@media screen and (max-width: 1040px) {
+    .services .services__content .services__title h2 {
+        text-align: center;
+    }
+
+    .services__title h2 {
+        text-align: center;
+        color: red;
+    }
+
+    .services__list {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .services__item {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services__item {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
 }
 
 .microscope {
@@ -2027,6 +2144,46 @@ a, a:hover, a:visited, a:active {
     margin-bottom: 80px;
 }
 
+@media screen and (max-width: 960px) {
+    .credit .page__container {
+        padding: 0 10px;
+    }
+
+    .credit .page__container .page__content .content__title h1 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #065770;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .credit .page__container .page__content .content__title h2 {
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        color: #292929;
+    }
+
+    .credit .page__container .invite__btn_credit {
+        width: 250px !important;
+        height: 51px;
+        border-radius: 25px;
+        padding-top: 18px;
+        margin-top: 51px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
+    }
+}
+
 .contacts .page__container .page__content .content__title h1 {
     font-size: 36px;
     font-style: normal;
@@ -2048,6 +2205,42 @@ a, a:hover, a:visited, a:active {
     text-align: left;
     text-transform: uppercase;
     color: #292929;
+}
+
+@media screen and (max-width: 1200px) {
+    .page__container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .contacts .page__container .page__content .content__title h1 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #065770;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .contacts .page__container .page__content .content__title h2 {
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform: uppercase;
+        color: #292929;
+    }
+
+    .contacts .page__container .page__content .content__diff {
+        text-align: center;
+    }
 }
 
 .about .page__container .page__content .content__diff .content__wrapper {
@@ -2094,4 +2287,151 @@ a, a:hover, a:visited, a:active {
     text-align: left;
     text-transform: uppercase;
     color: #292929;
+}
+
+.price__title h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #065770;
+    text-transform: uppercase;
+}
+
+.accordeon {
+    width: 100%;
+    margin: 5px auto;
+    padding: 20px;
+}
+
+.accordeon__item {
+    margin-bottom: 20px;
+}
+
+.accordeon__title {
+    display: block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #065770;
+    cursor: pointer;
+}
+
+.accordeon__title span {
+    display: inline-block;
+}
+
+.accordeon__input {
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.accordeon__input:checked ~ .accordeon__txt {
+    display: block;
+}
+
+.accordeon__input:checked + .accordeon__title > span {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.accordeon__txt {
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.accordeon__menu li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #292929;
+}
+
+.accordeon__menu li .menu__name {
+    -ms-flex: 0 0 2;
+    flex: 0 0 2;
+}
+
+.accordeon__menu li .menu__price {
+    -ms-flex: 0 0 1;
+    flex: 0 0 1;
+}
+
+.price__footer .price__container .price-invite {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.price__footer .price__container .price-invite .price-invite__img {
+    margin-right: 50px;
+}
+
+.price__footer .price__container .price-invite .price-invite__img img {
+    margin-left: 0;
+}
+
+.price__footer .price__container .price-invite .price-invite__offer {
+    max-width: 560px;
+}
+
+.price__footer .price__container .price-invite .price-invite__offer .price-invite__title {
+    max-width: 450px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 3.5rem;
+    color: #065770;
+    margin-bottom: 17px;
+}
+
+.price__footer .price__container .price-invite .price-invite__offer .price-invite__title span {
+    font-weight: 700;
+}
+
+.price__footer .price__container .price-invite .price-invite__offer .price-invite__list li {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: 18px;
+    background: url("../images/main-img_chek.png") no-repeat left center;
+}
+
+.price__footer .price__container .price-invite .price-invite__offer .price-invite__btn {
+    width: 250px;
+    height: 51px;
+    border-radius: 25px;
+    padding-top: 18px;
+    margin-top: 51px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .accordeon__menu li {
+        display: -ms-flexbox;
+        display: flex;
+        padding-bottom: 10px;
+    }
 }

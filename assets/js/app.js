@@ -1186,7 +1186,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _esm
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ \"./node_modules/swiper/swiper-bundle.esm.js\");\n\r\n\r\nconst swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.myslid', {\r\n  // Optional parameters\r\n\tloop: true,\r\n\r\n  // If we need pagination\r\n  pagination: {\r\n\t  el: '.swiper-pagination',\r\n\t  clickable: true,\r\n  },\r\n\r\n  // Navigation arrows\r\n  navigation: {\r\n    nextEl: '.swiper-button-next',\r\n    prevEl: '.swiper-button-prev',\r\n\t},\r\n  \r\n\tautoplay: {\r\n\t\tdelay: 2000,\r\n\t\tdisableOnInteraction: true,\r\n\t},\r\n\t\r\n\tspeed: 1000,\r\n\t});\r\n\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ \"./node_modules/swiper/swiper-bundle.esm.js\");\n\r\n\r\nconst swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.myslid', {\r\n  // Optional parameters\r\n\tloop: true,\r\n\r\n  // If we need pagination\r\n  pagination: {\r\n\t  el: '.swiper-pagination',\r\n\t  clickable: true,\r\n\t\r\n  },\r\n\r\n  // Navigation arrows\r\n  navigation: {\r\n    nextEl: '.swiper-button-next',\r\n    prevEl: '.swiper-button-prev',\r\n\t},\r\n  \r\n\tautoplay: {\r\n\t\tdelay: 2000,\r\n\t\tdisableOnInteraction: true,\r\n\t},\r\n\t\r\n\tspeed: 1000,\r\n\t});\r\n\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
 
 /***/ }),
 

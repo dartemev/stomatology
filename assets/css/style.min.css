@@ -864,6 +864,78 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-ExtraLight.eot");
+  src: url("../fonts/Montserrat-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff"), url("../fonts/Montserrat-ExtraLight.ttf") format("truetype"), url("../fonts/Montserrat-ExtraLight.svg#Montserrat-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Thin.eot");
+  src: url("../fonts/Montserrat-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff"), url("../fonts/Montserrat-Thin.ttf") format("truetype"), url("../fonts/Montserrat-Thin.svg#Montserrat-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("../fonts/Montserrat-ExtraBold.svg#Montserrat-ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Light.eot");
+  src: url("../fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), url("../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Black.eot");
+  src: url("../fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.ttf") format("truetype"), url("../fonts/Montserrat-Black.svg#Montserrat-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
+
 html {
   font-size: 62.5%; }
 
@@ -1313,7 +1385,7 @@ a, a:hover, a:visited, a:active {
           font-weight: 600;
           line-height: 22px;
           letter-spacing: 0em;
-          text-align: center;
+          text-align: left;
           padding: 0 20px;
           height: 60px; }
           .our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item span .our-technology__link {
@@ -1330,6 +1402,11 @@ a, a:hover, a:visited, a:active {
         background: url(../images/tech-bone.png) no-repeat center top/100%; }
       .our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item_implant {
         background: url(../images/tech-implant.png) no-repeat center top/100%; }
+
+@media screen and (max-width: 960px) {
+  .our-technology .our-technology__content .our-technology__title h2 {
+    font-size: 16px;
+    text-align: center; } }
 
 .services {
   width: 100%;
@@ -1348,13 +1425,14 @@ a, a:hover, a:visited, a:active {
       letter-spacing: 0em;
       text-align: left;
       color: #065770;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-bottom: 50px; }
     .services .services__content .services__menu .services__list {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap; }
       .services .services__content .services__menu .services__list .services__item {
-        flex: 0 0 33.333%;
+        width: 33.333%;
         margin-bottom: 30px; }
         .services .services__content .services__menu .services__list .services__item span {
           display: flex;
@@ -1391,6 +1469,22 @@ a, a:hover, a:visited, a:active {
           background: url(../images/services-08.png) no-repeat center/100%; }
         .services .services__content .services__menu .services__list .services__item .ortodont {
           background: url(../images/services-09.png) no-repeat center/100%; }
+
+@media screen and (max-width: 1040px) {
+  .services .services__content .services__title h2 {
+    text-align: center; }
+  .services__title h2 {
+    text-align: center;
+    color: red; }
+  .services__list {
+    display: flex;
+    justify-content: center; }
+  .services__item {
+    flex: 0 0 50%; } }
+
+@media screen and (max-width: 480px) {
+  .services__item {
+    flex: 0 0 100%; } }
 
 .microscope {
   width: 100%;
@@ -1501,12 +1595,57 @@ a, a:hover, a:visited, a:active {
       margin-left: auto;
       margin-right: auto; }
 
+@media screen and (max-width: 480px) {
+  .microscope .page__content {
+    padding-top: 60px; }
+    .microscope .page__content .content__title {
+      margin-bottom: 15px; }
+      .microscope .page__content .content__title h2 {
+        font-size: 18px !important;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        color: #065770; }
+    .microscope .page__content .content__diff {
+      font-family: Montserrat;
+      font-size: 14px !important;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #292929;
+      margin-bottom: 25px; }
+      .microscope .page__content .content__diff img {
+        display: block;
+        width: 100%; }
+  .page__breadcrumb {
+    display: flex;
+    flex-direction: column; }
+    .page__breadcrumb li {
+      margin-bottom: 10px; }
+      .page__breadcrumb li:nth-child(even) {
+        display: none; } }
+
 .page__head_implant {
   background: url(../images/bg__implant.png) no-repeat center top/cover; }
 
 .page__title_implant {
   padding-top: 40px;
   padding-bottom: 420px; }
+
+@media screen and (max-width: 480px) {
+  .page__head_implant {
+    background: url(../images/bg__implant.png) no-repeat left top/cover; }
+  .implant .page__head .page__container .page__title h1 {
+    font-size: 30px; }
+  .page__content .content__title h2 {
+    font-size: 18px !important; }
+  .page__content .content__diff p {
+    font-size: 14px !important; } }
 
 .credit .page__container .page__content .content__title h1 {
   font-size: 36px;
@@ -1539,6 +1678,18 @@ a, a:hover, a:visited, a:active {
   margin-right: auto;
   margin-bottom: 80px; }
 
+@media screen and (max-width: 960px) {
+  .credit .page__container {
+    padding: 0 15px; }
+    .credit .page__container .page__content .content__title h1 {
+      text-align: center; }
+    .credit .page__container .page__content .content__title h2 {
+      font-size: 18px; }
+    .credit .page__container .page__content .content__diff {
+      font-size: 16px; }
+    .credit .page__container .invite__btn_credit {
+      width: 280px; } }
+
 .contacts .page__container .page__content .content__title h1 {
   font-size: 36px;
   font-style: normal;
@@ -1559,6 +1710,34 @@ a, a:hover, a:visited, a:active {
   text-align: left;
   text-transform: uppercase;
   color: #292929; }
+
+@media screen and (max-width: 1200px) {
+  .page__container {
+    width: 100%;
+    padding: 0 10px; } }
+
+@media screen and (max-width: 640px) {
+  .contacts .page__container .page__content .content__title h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #065770;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+  .contacts .page__container .page__content .content__title h2 {
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #292929; }
+  .contacts .page__container .page__content .content__diff {
+    text-align: center; } }
 
 .about .page__container .page__content .content__diff .content__wrapper {
   display: flex;
@@ -1694,6 +1873,77 @@ a, a:hover, a:visited, a:active {
       margin-right: auto; }
 
 @media screen and (max-width: 1200px) {
+  .price .page__content {
+    padding: 20px 0 0 0; }
+  .price__title h1 {
+    text-align: center; }
+  .accordeon {
+    padding: 10px; }
   .accordeon__menu li {
     display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
     padding-bottom: 10px; } }
+
+@media screen and (max-width: 1150px) {
+  .price__footer .price__container .price-invite {
+    flex-direction: column;
+    align-items: start; } }
+
+@media screen and (max-width: 960px) {
+  .price__footer .price__container .price-invite {
+    flex-direction: row;
+    align-items: center; }
+    .price__footer .price__container .price-invite .price-invite__offer .price-invite__title {
+      font-size: 18px;
+      line-height: 1.5; }
+    .price__footer .price__container .price-invite .price-invite__offer .price-invite__list li {
+      font-size: 14px;
+      line-height: 2; } }
+
+@media screen and (max-width: 640px) {
+  .price__footer .price__container .price-invite {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px 10px; }
+    .price__footer .price__container .price-invite .price-invite__img {
+      display: none; }
+    .price__footer .price__container .price-invite .price-invite__offer .price-invite__title {
+      font-size: 18px;
+      line-height: 1.5; }
+    .price__footer .price__container .price-invite .price-invite__offer .price-invite__list li {
+      font-size: 14px;
+      line-height: 2; } }
+
+@media screen and (max-width: 480px) {
+  .price__title h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #065770;
+    text-transform: uppercase; }
+  .page__content {
+    padding-top: 10px; }
+  .accordeon__item {
+    margin-bottom: 20px; }
+  .accordeon__title {
+    font-size: 14px; }
+  .accordeon__txt {
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .accordeon__menu li {
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0em; }
+    .accordeon__menu li .menu__name {
+      line-height: 1rem; }
+    .accordeon__menu li .menu__price {
+      line-height: 33px;
+      font-weight: 600; } }

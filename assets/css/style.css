@@ -1140,6 +1140,10 @@ button.swiper-pagination-bullet {
   font-display: swap;
 }
 
+* {
+    transition: 0 all;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -1426,23 +1430,112 @@ a, a:hover, a:visited, a:active {
     display: none;
 }
 
-.burger {
-    display: none;
+.burger-wrapper {
     position: fixed;
+    z-index: 3;
     width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    z-index: 10;
 }
 
-.burger span {
+.burger {
+    margin: 0 auto;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: none;
+}
+
+#check-menu {
+    display: none;
+}
+
+.burger-title {
     display: block;
-    width: 30px;
-    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.burger-line {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
     background-color: #000;
+    z-index: 4;
+}
+
+.first {
+    transition: 0 all;
+}
+
+.second,
+.third {
+    top: 18px;
+    transition: .5s all;
+}
+
+.fourth {
+    top: 28px;
+    transition: 0 all;
+}
+
+.burger-menu {
+    display: block;
+    position: absolute;
+    width: 320px;
+    top: calc(50vh - 500px);
+    left: calc(50% - 160px);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all;
+}
+
+.burger-menu a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#check-menu:checked ~ .burger-menu {
+    max-height: 500px;
+    font-size: 16px;
+}
+
+#check-menu:checked ~ .first {
+    display: none;
+}
+
+#check-menu:checked ~ .second {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .burger {
+        display: block;
+    }
 }
 
 .home-header__slider h2 {
@@ -1474,7 +1567,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .home-header__slider .slider__cart .slider__comment {
-    width: 370px;
+    width: 300px;
     overflow-y: scroll;
     scrollbar-width: none;
 }
@@ -1727,6 +1820,44 @@ a, a:hover, a:visited, a:active {
         -ms-flex-pack: center;
         justify-content: center;
     }
+
+    .slider__comment .slider__cart {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .slider__comment .slider__cart .slider__img {
+        width: 220px;
+        height: 220px;
+        margin-right: 45px;
+        overflow: hidden;
+    }
+
+    .slider__comment .slider__cart .slider__comment {
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+
+    .slider__comment .slider__cart .slider__comment::-webkit-scrollbar {
+        /* webkit */
+        width: 0;
+        height: 0;
+    }
+
+    .slider__comment .slider__cart .slider__comment p {
+        font-size: 12px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+        height: 120px;
+    }
 }
 
 .our-technology {
@@ -1789,7 +1920,7 @@ a, a:hover, a:visited, a:active {
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     padding: 0 20px;
     height: 60px;
 }
@@ -1820,6 +1951,13 @@ a, a:hover, a:visited, a:active {
 
 .our-technology .our-technology__content .our-technology__menu .our-technology__list .our-technology__item_implant {
     background: url(../images/tech-implant.png) no-repeat center top/100%;
+}
+
+@media screen and (max-width: 960px) {
+    .our-technology .our-technology__content .our-technology__title h2 {
+        font-size: 16px;
+        text-align: center;
+    }
 }
 
 .services {
@@ -2101,6 +2239,59 @@ a, a:hover, a:visited, a:active {
     margin-right: auto;
 }
 
+@media screen and (max-width: 480px) {
+    .microscope .page__content {
+        padding-top: 60px;
+    }
+
+    .microscope .page__content .content__title {
+        margin-bottom: 15px;
+    }
+
+    .microscope .page__content .content__title h2 {
+        font-size: 18px !important;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        color: #065770;
+    }
+
+    .microscope .page__content .content__diff {
+        font-family: Montserrat;
+        font-size: 14px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #292929;
+        margin-bottom: 25px;
+    }
+
+    .microscope .page__content .content__diff img {
+        display: block;
+        width: 100%;
+    }
+
+    .page__breadcrumb {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .page__breadcrumb li {
+        margin-bottom: 10px;
+    }
+
+    .page__breadcrumb li:nth-child(even) {
+        display: none;
+    }
+}
+
 .page__head_implant {
     background: url(../images/bg__implant.png) no-repeat center top/cover;
 }
@@ -2108,6 +2299,24 @@ a, a:hover, a:visited, a:active {
 .page__title_implant {
     padding-top: 40px;
     padding-bottom: 420px;
+}
+
+@media screen and (max-width: 480px) {
+    .page__head_implant {
+        background: url(../images/bg__implant.png) no-repeat left top/cover;
+    }
+
+    .implant .page__head .page__container .page__title h1 {
+        font-size: 30px;
+    }
+
+    .page__content .content__title h2 {
+        font-size: 18px !important;
+    }
+
+    .page__content .content__diff p {
+        font-size: 14px !important;
+    }
 }
 
 .credit .page__container .page__content .content__title h1 {
@@ -2146,41 +2355,23 @@ a, a:hover, a:visited, a:active {
 
 @media screen and (max-width: 960px) {
     .credit .page__container {
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .credit .page__container .page__content .content__title h1 {
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 49px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #065770;
-        text-transform: uppercase;
-        margin-bottom: 30px;
+        text-align: center;
     }
 
     .credit .page__container .page__content .content__title h2 {
-        font-size: 23px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 23px;
-        letter-spacing: 0em;
-        text-align: left;
-        text-transform: uppercase;
-        color: #292929;
+        font-size: 18px;
+    }
+
+    .credit .page__container .page__content .content__diff {
+        font-size: 16px;
     }
 
     .credit .page__container .invite__btn_credit {
-        width: 250px !important;
-        height: 51px;
-        border-radius: 25px;
-        padding-top: 18px;
-        margin-top: 51px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 80px;
+        width: 280px;
     }
 }
 
@@ -2256,11 +2447,13 @@ a, a:hover, a:visited, a:active {
 .about .page__container .page__content .content__diff .content__wrapper .content__img {
     max-width: 470px;
     width: 100%;
+    margin: 0 10px;
 }
 
 .about .page__container .page__content .content__diff .content__wrapper .content__inf {
     max-width: 470px;
     width: 100%;
+    margin: 0 10px;
 }
 
 .inf__title {
@@ -2287,6 +2480,88 @@ a, a:hover, a:visited, a:active {
     text-align: left;
     text-transform: uppercase;
     color: #292929;
+}
+
+@media screen and (max-width: 960px) {
+    .about .page__container .page__content .content__diff {
+        font-size: 16px;
+    }
+
+    .about .page__container .page__content .content__diff .content__wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        padding-bottom: 30px;
+    }
+
+    .about .page__container .page__content .content__diff .content__wrapper .content__img {
+        max-width: 470px;
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .about .page__container .page__content .content__diff .content__wrapper .content__inf {
+        max-width: 470px;
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .inf__txt P {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about .page__container .page__content {
+        padding: 20px 0 0 0;
+    }
+
+    .about .page__container .page__content .content__diff {
+        font-size: 14px;
+    }
+
+    .about .page__container .page__content .content__diff .content__wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .about .page__container .page__content .content__diff .content__wrapper .content__img {
+        -ms-flex-order: 1;
+        order: 1;
+        max-width: 470px;
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .about .page__container .page__content .content__diff .content__wrapper .content__inf {
+        -ms-flex-order: 0;
+        order: 0;
+        max-width: 470px;
+        width: 100%;
+        margin: 0 10px;
+    }
+
+    .inf__title {
+        margin-bottom: 10px;
+    }
+
+    .inf__title h2 {
+        line-height: 1.5rem;
+    }
+
+    .inf__txt P {
+        font-size: 16px;
+    }
 }
 
 .price__title h1 {
@@ -2429,9 +2704,127 @@ a, a:hover, a:visited, a:active {
 }
 
 @media screen and (max-width: 1200px) {
+    .price .page__content {
+        padding: 20px 0 0 0;
+    }
+
+    .price__title h1 {
+        text-align: center;
+    }
+
+    .accordeon {
+        padding: 10px;
+    }
+
     .accordeon__menu li {
         display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
         padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .price__footer .price__container .price-invite {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: start;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .price__footer .price__container .price-invite {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .price__footer .price__container .price-invite .price-invite__offer .price-invite__title {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .price__footer .price__container .price-invite .price-invite__offer .price-invite__list li {
+        font-size: 14px;
+        line-height: 2;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .price__footer .price__container .price-invite {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 10px 10px;
+    }
+
+    .price__footer .price__container .price-invite .price-invite__img {
+        display: none;
+    }
+
+    .price__footer .price__container .price-invite .price-invite__offer .price-invite__title {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .price__footer .price__container .price-invite .price-invite__offer .price-invite__list li {
+        font-size: 14px;
+        line-height: 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .price__title h1 {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #065770;
+        text-transform: uppercase;
+    }
+
+    .page__content {
+        padding-top: 10px;
+    }
+
+    .accordeon__item {
+        margin-bottom: 20px;
+    }
+
+    .accordeon__title {
+        font-size: 14px;
+    }
+
+    .accordeon__txt {
+        display: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .accordeon__menu li {
+        font-size: 13px;
+        text-align: center;
+        letter-spacing: 0em;
+    }
+
+    .accordeon__menu li .menu__name {
+        line-height: 1rem;
+    }
+
+    .accordeon__menu li .menu__price {
+        line-height: 33px;
+        font-weight: 600;
     }
 }

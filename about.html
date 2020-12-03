@@ -19,10 +19,46 @@
 	
 	<link rel="stylesheet" href="assets/css/style.min.css">
 	
-	<title>about</title></head>
+	<title>О клинике</title></head>
 
 <body>
-
+	<div class="burger-wrapper">
+		<div class="burger">
+			<input type="checkbox" name="" id="check-menu">
+			<label for="check-menu" class="burger-title"></label>
+	
+			<div class="burger-line first"></div>
+			<div class="burger-line second"></div>
+			<div class="burger-line third"></div>
+			<div class="burger-line fourth"></div>
+	
+			<nav class="burger-menu">
+	
+				<div class="burger-logo">
+					<a href="index.html" class="burger-logo__link">
+						<img src="assets/images/logo.png" alt="">
+					</a>
+				</div>
+	
+				<a href="service.html">Услуги</a>
+				<a href="about.html">О клинике</a>
+				<a href="our-technology.html">Технологии</a>
+				<a href="price.html">Прайс</a>
+				<a href="credit.html">Рассрочка 0%</a>
+				<a href="contacts.html">Контакты</a>
+	
+				<div class="burger-contact">
+					<a href="tel:89999999999" class="burger-phone">
+						+7 (999) 999-99-99
+					</a>
+					<a href="#" class="burg-btn open-modal">
+						Записаться на приём
+					</a>
+				</div>
+	
+			</nav>
+		</div>
+	</div>
 	<div class="page">
 
 		<aside class="sidebar">
@@ -76,7 +112,7 @@
 					<a href="tel:89999999999" class="sidebar__phone">
 						+7 (999) 999-99-99
 					</a>
-					<a href="#" class="sidebar__btn">
+					<a href="#" class="sidebar__btn  open-modal">
 						Записаться на приём
 					</a>
 				</div>
@@ -212,7 +248,30 @@
 
 	</div>
 
-
+	<div class="modal">
+		<div class="modal-content">
+			<span class="modal-close">&times;</span>
+			<div class="modal-header">
+				<p class="modal-title">
+					Записаться на приём
+				</p>
+			</div>
+			<div class="modal-body">
+				<form action="success.php" id="popupResult" method="post" class="call-form js-form">
+					<input class="modal-form__input" name="name" type="text" placeholder="Введите Ваше имя" required>
+					<input id="phone" class="modal-form__input" name="phone" type="tel" placeholder="Введите Ваш телефон"
+						required>
+					<p class="modal-form__info">
+						*Нажимая на кнопку ЗАПИСАТЬСЯ я даю свое согласие на обработку персональных данных
+					</p>
+					<button data-submit class="modal-form__btn">
+						Записаться на приём
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="assets/js/app.js"></script>
 
 </body>

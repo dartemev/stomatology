@@ -1788,7 +1788,8 @@ input.valid {
 }
 
 .home__content {
-	max-width: 714px;
+	/* max-width: 714px; */
+	max-width: calc(100% - 386px);
 	width: 100%;
 	padding: 0 15px;
 }
